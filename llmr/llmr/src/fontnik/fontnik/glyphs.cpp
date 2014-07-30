@@ -15,7 +15,7 @@ extern "C"
 #include FT_FREETYPE_H
 }
 
-namespace fontnik
+namespace mbgl
 {
 
 Glyphs::Glyphs() {}
@@ -34,8 +34,8 @@ std::string Glyphs::Serialize()
 }
 
 void Glyphs::Range(std::string fontstack,
-                   const llmr::GlyphRange &range,
-                   llmr::FontStack &stack)
+                   const GlyphRange &range,
+                   FontStack &stack)
 {
     mapnik::freetype_engine font_engine_;
     mapnik::face_manager_freetype font_manager(font_engine_);
@@ -92,7 +92,7 @@ void Glyphs::Range(std::string fontstack,
 //                mutable_glyph->set_bitmap(glyph.bitmap);
 //            }
 
-            llmr::SDFGlyph SDFglyph;
+            SDFGlyph SDFglyph;
             
 
                     SDFglyph.id = char_code;

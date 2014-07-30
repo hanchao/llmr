@@ -31,10 +31,10 @@
 #include <mutex>
 #include <set>
 
-#include <llmr/text/glyph.hpp>
-#include <llmr/text/glyph_store.hpp>
+#include <mbgl/text/glyph.hpp>
+#include <mbgl/text/glyph_store.hpp>
 
-namespace fontnik
+namespace mbgl
 {
 
 class Glyphs
@@ -51,8 +51,8 @@ public:
 //               std::vector<std::uint32_t> chars);
 
     void Range(std::string fontstack,
-               const llmr::GlyphRange &range,
-               llmr::FontStack &stack);
+               const GlyphRange &range,
+               FontStack &stack);
     
     static std::vector<int> Codepoints(std::string fontstack);
 

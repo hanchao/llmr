@@ -2,11 +2,10 @@
 
 #import "MGLMapView.h"
 
-#import <llmr/platform/settings_nsuserdefaults.hpp>
+#import "mbgl/platform/settings_nsuserdefaults.hpp"
+#import "mbgl/platform/nslog_log.hpp"
 
 #import <CoreLocation/CoreLocation.h>
-
-#include <llmr/platform/nslog_log.hpp>
 
 @interface MBXViewController () <CLLocationManagerDelegate>
 
@@ -19,7 +18,7 @@
 
 @implementation MBXViewController
 
-llmr::Settings_NSUserDefaults *settings = nullptr;
+mbgl::Settings_NSUserDefaults *settings = nullptr;
 
 #pragma mark - Setup
 
@@ -38,20 +37,11 @@ llmr::Settings_NSUserDefaults *settings = nullptr;
 
 - (void)viewDidLoad
 {
-    llmr::Log::Set<llmr::NSLogBackend>();
-
     [super viewDidLoad];
 
-    NSString *accessToken = nil;
-
-    // Set access token if present
-    const char *token = getenv("MAPBOX_ACCESS_TOKEN");
-    token = "pk.eyJ1IjoiaGFuY2hhbyIsImEiOiI1RTIwNkkwIn0.ht9ldcZjv7VtmF41F7DhRg";
-    if (token == nullptr) {
-        llmr::Log::Warning(llmr::Event::Setup, "no access token set. mapbox.com tiles won't work.");
-    } else {
-        accessToken = [NSString stringWithCString:token encoding:NSASCIIStringEncoding];
-    }
+    NSString *accessToken = [[NSProcessInfo processInfo] environment][@"MAPBOX_ACCESS_TOKEN"];
+    accessToken = @"pk.eyJ1IjoiaGFuY2hhbyIsImEiOiI1RTIwNkkwIn0.ht9ldcZjv7VtmF41F7DhRg";
+    if ( ! accessToken) mbgl::Log::Warning(mbgl::Event::Setup, "No access token set. Mapbox vector tiles won't work.");
 
     self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds accessToken:accessToken];
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -59,7 +49,7 @@ llmr::Settings_NSUserDefaults *settings = nullptr;
 
     self.mapView.viewControllerForLayoutGuides = self;
 
-    settings = new llmr::Settings_NSUserDefaults();
+    settings = new mbgl::Settings_NSUserDefaults();
     [self restoreState:nil];
 
     [self setupDebugUI];
@@ -78,7 +68,7 @@ llmr::Settings_NSUserDefaults *settings = nullptr;
         settings->longitude = self.mapView.centerCoordinate.longitude;
         settings->latitude = self.mapView.centerCoordinate.latitude;
         settings->zoom = self.mapView.zoomLevel;
-        settings->angle = self.mapView.direction;
+        settings->bearing = self.mapView.direction;
         settings->debug = self.mapView.isDebugActive;
         settings->save();
     }
@@ -89,7 +79,7 @@ llmr::Settings_NSUserDefaults *settings = nullptr;
     if (self.mapView && settings) {
         settings->load();
         [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(settings->latitude, settings->longitude) zoomLevel:settings->zoom animated:NO];
-        self.mapView.direction = settings->angle;
+        self.mapView.direction = settings->bearing;
         [self.mapView setDebugActive:settings->debug];
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6737A191988CD1300B9E94B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6737A181988CD1300B9E94B /* libz.dylib */; };
 		D675B96E1973C9D300209D59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675B96D1973C9D300209D59 /* Foundation.framework */; };
 		D675B9701973C9D300209D59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675B96F1973C9D300209D59 /* CoreGraphics.framework */; };
 		D675B9721973C9D300209D59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675B9711973C9D300209D59 /* UIKit.framework */; };
@@ -74,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D6737A181988CD1300B9E94B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D675B96A1973C9D300209D59 /* llmr-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "llmr-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D675B96D1973C9D300209D59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D675B96F1973C9D300209D59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,7 +142,6 @@
 		D675BAEF1973D34300209D59 /* MapboxGL.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MapboxGL.bundle; sourceTree = "<group>"; };
 		D675BAF11973E56900209D59 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D6D88B181981FF4400517537 /* libFreetype2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFreetype2.a; path = "../llmr/freetype2-ios/build/Debug-iphoneos/libFreetype2.a"; sourceTree = "<group>"; };
-		D6D88B1A1982023F00517537 /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = boost.framework; path = "../../../../Downloads/boost-ios-master/Dist/boost.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6737A191988CD1300B9E94B /* libz.dylib in Frameworks */,
 				D6D88B191981FF4400517537 /* libFreetype2.a in Frameworks */,
 				D675BAF21973E56900209D59 /* ImageIO.framework in Frameworks */,
 				D675BAEA1973CED800209D59 /* GLKit.framework in Frameworks */,
@@ -195,7 +197,7 @@
 		D675B96C1973C9D300209D59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6D88B1A1982023F00517537 /* boost.framework */,
+				D6737A181988CD1300B9E94B /* libz.dylib */,
 				D6D88B181981FF4400517537 /* libFreetype2.a */,
 				D675BAF11973E56900209D59 /* ImageIO.framework */,
 				D675BAE91973CED800209D59 /* GLKit.framework */,
