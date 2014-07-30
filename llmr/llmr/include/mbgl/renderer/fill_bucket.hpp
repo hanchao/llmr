@@ -48,6 +48,7 @@ public:
     virtual bool hasData() const;
 
     void addGeometry(pbf& data);
+    void addGeometry(std::vector<Coordinate> &coords);
     void tessellate();
 
     void drawElements(PlainShader& shader);

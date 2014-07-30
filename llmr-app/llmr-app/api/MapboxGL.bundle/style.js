@@ -11,7 +11,7 @@
      "mapzenwater": {
           "type": "geojson",
           "url": "http://vector.mapzen.com/osm/water/{z}/{x}/{y}.json",
-          "maxZoom": 14
+          "maxZoom": 18
       }
   },
   "constants": {
@@ -2248,17 +2248,12 @@
              }, {
              "id": "mapzenwater",
              "source": "mapzenwater",
-             "type": "line",
-             "render": {
-             "line-cap": "round"
-             },
+             "type": "fill",
              "style": {
-             "line-color": "#87abaf",
-             "line-width": "@river_canal_width"
+             "fill-color": "#0000ff"
              },
              "style.night": {
-             "line-color": "rgb(10,20,71)",
-             "line-width": "@river_canal_width"
+             "fill-color": "#ff00ff"
              }
              }]
 }

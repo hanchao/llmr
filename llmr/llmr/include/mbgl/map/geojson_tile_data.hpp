@@ -9,10 +9,17 @@
 #ifndef __llmr__geojson_tile_data__
 #define __llmr__geojson_tile_data__
 
-#include <iostream>
 #include <mbgl/map/tile.hpp>
 #include <mbgl/map/tile_data.hpp>
-#include <mbgl/renderer/raster_bucket.hpp>
+#include <mbgl/geometry/elements_buffer.hpp>
+#include <mbgl/geometry/fill_buffer.hpp>
+#include <mbgl/geometry/icon_buffer.hpp>
+#include <mbgl/geometry/line_buffer.hpp>
+#include <mbgl/geometry/text_buffer.hpp>
+
+#include <iosfwd>
+#include <memory>
+#include <unordered_map>
 
 namespace mbgl {
 class GeoJSONTileData : public TileData {
@@ -25,6 +32,23 @@ public:
     virtual void parse();
     virtual void render(Painter &painter, std::shared_ptr<StyleLayer> layer_desc);
     virtual bool hasData(std::shared_ptr<StyleLayer> layer_desc) const;
+    
+protected:
+    // Holds the actual geometries in this tile.
+    FillVertexBuffer fillVertexBuffer;
+    LineVertexBuffer lineVertexBuffer;
+    IconVertexBuffer iconVertexBuffer;
+    TextVertexBuffer textVertexBuffer;
+    
+    TriangleElementsBuffer triangleElementsBuffer;
+    LineElementsBuffer lineElementsBuffer;
+    PointElementsBuffer pointElementsBuffer;
+    
+    // Holds the buckets of this tile.
+    // They contain the location offsets in the buffers stored above
+    std::unordered_map<std::string, std::unique_ptr<Bucket>> buckets;
+    
+    //std::unique_ptr<TileParser> parser;
 };
 
 }

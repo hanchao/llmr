@@ -88,6 +88,23 @@ void FillBucket::addGeometry(pbf& geom) {
     tessellate();
 }
 
+void FillBucket::addGeometry(std::vector<Coordinate> &coords) {
+
+    Coordinate coord;
+    
+    for(int i=0;i<coords.size();i++){
+        line.emplace_back(coords[i].x,coords[i].y);
+    }
+    
+    if (line.size()) {
+        clipper.AddPath(line, ClipperLib::ptSubject, true);
+        line.clear();
+        hasVertices = true;
+    }
+    
+    tessellate();
+}
+
 void FillBucket::tessellate() {
     if (!hasVertices) {
         return;
