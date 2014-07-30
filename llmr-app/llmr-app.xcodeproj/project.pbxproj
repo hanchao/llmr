@@ -60,6 +60,7 @@
 		D675BAEA1973CED800209D59 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675BAE91973CED800209D59 /* GLKit.framework */; };
 		D675BAF01973D34300209D59 /* MapboxGL.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D675BAEF1973D34300209D59 /* MapboxGL.bundle */; };
 		D675BAF21973E56900209D59 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675BAF11973E56900209D59 /* ImageIO.framework */; };
+		D6D88B191981FF4400517537 /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D88B181981FF4400517537 /* libFreetype2.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,8 @@
 		D675BAE91973CED800209D59 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		D675BAEF1973D34300209D59 /* MapboxGL.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MapboxGL.bundle; sourceTree = "<group>"; };
 		D675BAF11973E56900209D59 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D6D88B181981FF4400517537 /* libFreetype2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFreetype2.a; path = "../llmr/freetype2-ios/build/Debug-iphoneos/libFreetype2.a"; sourceTree = "<group>"; };
+		D6D88B1A1982023F00517537 /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = boost.framework; path = "../../../../Downloads/boost-ios-master/Dist/boost.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6D88B191981FF4400517537 /* libFreetype2.a in Frameworks */,
 				D675BAF21973E56900209D59 /* ImageIO.framework in Frameworks */,
 				D675BAEA1973CED800209D59 /* GLKit.framework in Frameworks */,
 				D675BA481973CD7B00209D59 /* OpenGLES.framework in Frameworks */,
@@ -191,6 +195,8 @@
 		D675B96C1973C9D300209D59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6D88B1A1982023F00517537 /* boost.framework */,
+				D6D88B181981FF4400517537 /* libFreetype2.a */,
 				D675BAF11973E56900209D59 /* ImageIO.framework */,
 				D675BAE91973CED800209D59 /* GLKit.framework */,
 				D675BA471973CD7B00209D59 /* OpenGLES.framework */,
@@ -563,14 +569,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/chaohan/Downloads/boost-ios-master/Dist",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "llmr-app/llmr-app-Prefix.pch";
 				INFOPLIST_FILE = "llmr-app/llmr-app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/llmr-cvjncnqjlxigvvgnefeqkbdsfouv/Build/Products/Debug-iphoneos",
+					"/Users/chaohan/Documents/Git/llmr/llmr/freetype2-ios/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -580,14 +593,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/chaohan/Downloads/boost-ios-master/Dist",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "llmr-app/llmr-app-Prefix.pch";
 				INFOPLIST_FILE = "llmr-app/llmr-app-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/llmr-cvjncnqjlxigvvgnefeqkbdsfouv/Build/Products/Debug-iphoneos",
+					"/Users/chaohan/Documents/Git/llmr/llmr/freetype2-ios/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -651,6 +671,7 @@
 				D675B9981973C9D300209D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D675B9991973C9D300209D59 /* Build configuration list for PBXNativeTarget "llmr-appTests" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +680,7 @@
 				D675B99B1973C9D300209D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

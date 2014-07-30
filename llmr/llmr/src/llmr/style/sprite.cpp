@@ -9,6 +9,8 @@
 
 #include <rapidjson/document.h>
 
+#include <llmr/platform/nsimage.hpp>
+
 using namespace llmr;
 
 SpritePosition::SpritePosition(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t pixelRatio)
@@ -75,7 +77,8 @@ void Sprite::asyncParseJSON() {
 }
 
 void Sprite::parseImage(std::shared_ptr<Sprite> &sprite) {
-    sprite->raster = std::make_unique<util::Image>(sprite->image);
+    //sprite->raster = std::make_unique<util::Image>(sprite->image);
+    sprite->raster = std::make_unique<NSImageBackend>(sprite->image);
     sprite->image.clear();
 }
 

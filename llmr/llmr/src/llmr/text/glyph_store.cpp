@@ -10,6 +10,9 @@
 #include <uv/uv.h>
 #include <algorithm>
 
+#include <fontnik/fontnik/glyphs.hpp>
+#include <fontnik/mapnik/font_engine_freetype.hpp>
+
 namespace llmr {
 
 
@@ -208,11 +211,53 @@ void GlyphPBF::parse(FontStack &stack) {
 }
 
 GlyphStore::GlyphStore(const std::string &glyphURL)
-    : glyphURL(glyphURL) {}
+    : glyphURL(glyphURL)
+{
+    mapnik::freetype_engine::register_font("/System/Library/Fonts/STHeiti Light.ttc");
+}
 
 void GlyphStore::waitForGlyphRanges(const std::string &fontStack, const std::set<GlyphRange> &glyphRanges) {
     // We are implementing a blocking wait with futures: Every GlyphSet has a future that we are
     // waiting for until it is loaded.
+    {
+//        //use fontnik
+//        mapnik::freetype_engine::register_font("//Users//chaohan//Downloads//node-fontnik-master//fonts//open-sans//OpenSans-Regular.ttf");
+//        
+//        fontnik::Glyphs glyph;
+//        std::vector<std::uint32_t> chars;
+//        chars.push_back(100);
+//        glyph.Range("Open Sans Regular", "0-255", chars);
+//        //glyph.
+        
+        FontStack *stack = nullptr;
+        
+//        std::vector<std::shared_future<GlyphPBF &>> futures;
+//        futures.reserve(glyphRanges.size());
+        {
+            std::lock_guard<std::mutex> lock(mtx);
+            auto &rangeSets = ranges[fontStack];
+            
+            stack = &createFontStack(fontStack);
+            
+
+
+            // Attempt to load the glyph range. If the GlyphSet already exists, we are getting back
+            // the same shared_future.
+            for (GlyphRange range : glyphRanges) {
+                fontnik::Glyphs glyph;
+                glyph.Range("Heiti TC Light", range, *stack);
+            }
+        }
+        
+//        // Now that we potentially created all GlyphSets, we are waiting for the results, one by one.
+//        // When we get a result (or the GlyphSet is aready loaded), we are attempting to parse the
+//        // GlyphSet.
+//        for (std::shared_future<GlyphPBF &> &future : futures) {
+//            future.get().parse(*stack);
+//        }
+        
+        return;
+    }
 
     FontStack *stack = nullptr;
 

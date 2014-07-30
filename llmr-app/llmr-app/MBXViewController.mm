@@ -38,7 +38,6 @@ llmr::Settings_NSUserDefaults *settings = nullptr;
 
 - (void)viewDidLoad
 {
-    UIImage *image = 
     llmr::Log::Set<llmr::NSLogBackend>();
 
     [super viewDidLoad];

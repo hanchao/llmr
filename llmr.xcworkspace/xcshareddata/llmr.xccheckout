@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1FA0D31B-000D-41E5-B254-CCF3F431A00E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>llmr</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9E01E0EB-C825-464F-848F-3F51214A01D4</key>
+		<string>https://github.com/hanchao/llmr.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>llmr.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9E01E0EB-C825-464F-848F-3F51214A01D4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hanchao/llmr.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9E01E0EB-C825-464F-848F-3F51214A01D4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9E01E0EB-C825-464F-848F-3F51214A01D4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>llmr</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -20,7 +20,7 @@ public:
     inline uint32_t getWidth() const { return width; }
     inline uint32_t getHeight() const { return height; }
 
-private:
+protected:
     // loaded image dimensions
     uint32_t width = 0, height = 0;
 

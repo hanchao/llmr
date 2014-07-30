@@ -142,6 +142,17 @@
 		D675BABF1973CDA600209D59 /* uv-common.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA761973CDA600209D59 /* uv-common.c */; };
 		D675BAC01973CDA600209D59 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA781973CDA600209D59 /* version.c */; };
 		D675BAEC1973CF8800209D59 /* constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D675BAEB1973CF8800209D59 /* constants.cpp */; };
+		D6D88B081981F53100517537 /* edtaa4func.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D88AFA1981F53100517537 /* edtaa4func.c */; };
+		D6D88B091981F53100517537 /* glyphs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D88AFC1981F53100517537 /* glyphs.cpp */; };
+		D6D88B0A1981F53100517537 /* distmap.c in Sources */ = {isa = PBXBuildFile; fileRef = D6D88AFE1981F53100517537 /* distmap.c */; };
+		D6D88B0B1981F53100517537 /* glyphs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D88AFF1981F53100517537 /* glyphs.cpp */; };
+		D6D88B0C1981F53100517537 /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D88B011981F53100517537 /* debug.cpp */; };
+		D6D88B0D1981F53100517537 /* font_engine_freetype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D88B021981F53100517537 /* font_engine_freetype.cpp */; };
+		D6D88B0E1981F53100517537 /* font_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D88B031981F53100517537 /* font_set.cpp */; };
+		D6D88B0F1981F53100517537 /* fs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D88B041981F53100517537 /* fs.cpp */; };
+		D6D88B101981F53100517537 /* face.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D88B061981F53100517537 /* face.cpp */; };
+		D6D88B111981F53100517537 /* node_fontnik.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6D88B071981F53100517537 /* node_fontnik.cpp */; };
+		D6D96B9F1974D18C00769967 /* nsimage.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6D96B9E1974D18C00769967 /* nsimage.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +162,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D675B7C11973B17500209D59;
 			remoteInfo = llmr;
+		};
+		D6D88B161981F92200517537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6D88B121981F92200517537 /* freetype2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6382B1B10FB0FC5100ECAC02;
+			remoteInfo = Freetype2;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -472,6 +490,47 @@
 		D675BAE71973CDC600209D59 /* uv-win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "uv-win.h"; sourceTree = "<group>"; };
 		D675BAE81973CDC600209D59 /* uv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uv.h; sourceTree = "<group>"; };
 		D675BAEB1973CF8800209D59 /* constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = constants.cpp; sourceTree = "<group>"; };
+		D6D88AD81981F52500517537 /* edtaa4func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = edtaa4func.h; sourceTree = "<group>"; };
+		D6D88AD91981F52500517537 /* README.fontserver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.fontserver; sourceTree = "<group>"; };
+		D6D88ADB1981F52500517537 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		D6D88ADC1981F52500517537 /* glyphs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = glyphs.hpp; sourceTree = "<group>"; };
+		D6D88ADD1981F52500517537 /* guarded_map.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = guarded_map.hpp; sourceTree = "<group>"; };
+		D6D88ADF1981F52500517537 /* distmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = distmap.h; sourceTree = "<group>"; };
+		D6D88AE01981F52500517537 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D6D88AE11981F52500517537 /* README.fontserver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.fontserver; sourceTree = "<group>"; };
+		D6D88AE31981F52500517537 /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
+		D6D88AE41981F52500517537 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		D6D88AE51981F52500517537 /* debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = debug.hpp; sourceTree = "<group>"; };
+		D6D88AE61981F52500517537 /* font_engine_freetype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = font_engine_freetype.hpp; sourceTree = "<group>"; };
+		D6D88AE71981F52500517537 /* font_set.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = font_set.hpp; sourceTree = "<group>"; };
+		D6D88AE81981F52500517537 /* noncopyable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = noncopyable.hpp; sourceTree = "<group>"; };
+		D6D88AE91981F52500517537 /* pixel_position.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pixel_position.hpp; sourceTree = "<group>"; };
+		D6D88AEA1981F52500517537 /* README.fontserver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.fontserver; sourceTree = "<group>"; };
+		D6D88AEC1981F52500517537 /* char_properties_ptr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = char_properties_ptr.hpp; sourceTree = "<group>"; };
+		D6D88AED1981F52500517537 /* face.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = face.hpp; sourceTree = "<group>"; };
+		D6D88AEE1981F52500517537 /* glyph_info.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = glyph_info.hpp; sourceTree = "<group>"; };
+		D6D88AF01981F52500517537 /* fs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fs.hpp; sourceTree = "<group>"; };
+		D6D88AF11981F52500517537 /* utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = utils.hpp; sourceTree = "<group>"; };
+		D6D88AF31981F52500517537 /* glyphs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = glyphs.hpp; sourceTree = "<group>"; };
+		D6D88AF51981F52500517537 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D6D88AF61981F52500517537 /* mapnik_fonts.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mapnik_fonts.hpp; sourceTree = "<group>"; };
+		D6D88AF71981F52500517537 /* README.fontserver */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.fontserver; sourceTree = "<group>"; };
+		D6D88AFA1981F53100517537 /* edtaa4func.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = edtaa4func.c; sourceTree = "<group>"; };
+		D6D88AFC1981F53100517537 /* glyphs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glyphs.cpp; sourceTree = "<group>"; };
+		D6D88AFE1981F53100517537 /* distmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = distmap.c; sourceTree = "<group>"; };
+		D6D88AFF1981F53100517537 /* glyphs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glyphs.cpp; sourceTree = "<group>"; };
+		D6D88B011981F53100517537 /* debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = debug.cpp; sourceTree = "<group>"; };
+		D6D88B021981F53100517537 /* font_engine_freetype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = font_engine_freetype.cpp; sourceTree = "<group>"; };
+		D6D88B031981F53100517537 /* font_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = font_set.cpp; sourceTree = "<group>"; };
+		D6D88B041981F53100517537 /* fs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fs.cpp; sourceTree = "<group>"; };
+		D6D88B061981F53100517537 /* face.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = face.cpp; sourceTree = "<group>"; };
+		D6D88B071981F53100517537 /* node_fontnik.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = node_fontnik.cpp; sourceTree = "<group>"; };
+		D6D88B121981F92200517537 /* freetype2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = freetype2.xcodeproj; path = "freetype2-ios/freetype2.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		D6D96B981974D03000769967 /* foundation_request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = foundation_request.h; sourceTree = "<group>"; };
+		D6D96B991974D03000769967 /* nsimage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nsimage.hpp; sourceTree = "<group>"; };
+		D6D96B9A1974D03000769967 /* nslog_log.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = nslog_log.hpp; sourceTree = "<group>"; };
+		D6D96B9B1974D03000769967 /* settings_nsuserdefaults.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = settings_nsuserdefaults.hpp; sourceTree = "<group>"; };
+		D6D96B9E1974D18C00769967 /* nsimage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = nsimage.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -519,6 +578,7 @@
 		D675B7C41973B17500209D59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6D88B121981F92200517537 /* freetype2.xcodeproj */,
 				D675B7C51973B17500209D59 /* Foundation.framework */,
 				D675B7D31973B17500209D59 /* XCTest.framework */,
 				D675B7D61973B17500209D59 /* UIKit.framework */,
@@ -565,6 +625,7 @@
 		D675B7EB1973B1FE00209D59 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				D6D88AD61981F52500517537 /* fontnik */,
 				D675BADA1973CDC600209D59 /* uv */,
 				D675B7EC1973B1FE00209D59 /* clipper */,
 				D675B7EE1973B1FE00209D59 /* csscolorparser */,
@@ -659,6 +720,10 @@
 		D675B8111973B1FE00209D59 /* platform */ = {
 			isa = PBXGroup;
 			children = (
+				D6D96B981974D03000769967 /* foundation_request.h */,
+				D6D96B991974D03000769967 /* nsimage.hpp */,
+				D6D96B9A1974D03000769967 /* nslog_log.hpp */,
+				D6D96B9B1974D03000769967 /* settings_nsuserdefaults.hpp */,
 				D675B8121973B1FE00209D59 /* event.hpp */,
 				D675B8131973B1FE00209D59 /* gl.hpp */,
 				D675B8141973B1FE00209D59 /* log.hpp */,
@@ -803,6 +868,7 @@
 		D675B8701973B1FE00209D59 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				D6D88AF81981F53100517537 /* fontnik */,
 				D675BA491973CDA600209D59 /* uv */,
 				D675B8711973B1FE00209D59 /* clipper */,
 				D675B8731973B1FE00209D59 /* csscolorparser */,
@@ -903,6 +969,7 @@
 		D675B89D1973B1FE00209D59 /* platform */ = {
 			isa = PBXGroup;
 			children = (
+				D6D96B9E1974D18C00769967 /* nsimage.mm */,
 				D675BA341973CC2300209D59 /* foundation_request.mm */,
 				D675BA371973CC2300209D59 /* nslog_log.mm */,
 				D675BA391973CC2300209D59 /* settings_nsuserdefaults.mm */,
@@ -1104,6 +1171,167 @@
 			path = uv;
 			sourceTree = "<group>";
 		};
+		D6D88AD61981F52500517537 /* fontnik */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AD71981F52500517537 /* edtaa */,
+				D6D88ADA1981F52500517537 /* fontnik */,
+				D6D88ADE1981F52500517537 /* freetype-gl */,
+				D6D88AE21981F52500517537 /* mapnik */,
+				D6D88AF21981F52500517537 /* node_fontnik */,
+				D6D88AF41981F52500517537 /* node_mapnik */,
+			);
+			path = fontnik;
+			sourceTree = "<group>";
+		};
+		D6D88AD71981F52500517537 /* edtaa */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AD81981F52500517537 /* edtaa4func.h */,
+				D6D88AD91981F52500517537 /* README.fontserver */,
+			);
+			path = edtaa;
+			sourceTree = "<group>";
+		};
+		D6D88ADA1981F52500517537 /* fontnik */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88ADB1981F52500517537 /* COPYING */,
+				D6D88ADC1981F52500517537 /* glyphs.hpp */,
+				D6D88ADD1981F52500517537 /* guarded_map.hpp */,
+			);
+			path = fontnik;
+			sourceTree = "<group>";
+		};
+		D6D88ADE1981F52500517537 /* freetype-gl */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88ADF1981F52500517537 /* distmap.h */,
+				D6D88AE01981F52500517537 /* LICENSE */,
+				D6D88AE11981F52500517537 /* README.fontserver */,
+			);
+			path = "freetype-gl";
+			sourceTree = "<group>";
+		};
+		D6D88AE21981F52500517537 /* mapnik */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AE31981F52500517537 /* config.hpp */,
+				D6D88AE41981F52500517537 /* COPYING */,
+				D6D88AE51981F52500517537 /* debug.hpp */,
+				D6D88AE61981F52500517537 /* font_engine_freetype.hpp */,
+				D6D88AE71981F52500517537 /* font_set.hpp */,
+				D6D88AE81981F52500517537 /* noncopyable.hpp */,
+				D6D88AE91981F52500517537 /* pixel_position.hpp */,
+				D6D88AEA1981F52500517537 /* README.fontserver */,
+				D6D88AEB1981F52500517537 /* text */,
+				D6D88AEF1981F52500517537 /* util */,
+				D6D88AF11981F52500517537 /* utils.hpp */,
+			);
+			path = mapnik;
+			sourceTree = "<group>";
+		};
+		D6D88AEB1981F52500517537 /* text */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AEC1981F52500517537 /* char_properties_ptr.hpp */,
+				D6D88AED1981F52500517537 /* face.hpp */,
+				D6D88AEE1981F52500517537 /* glyph_info.hpp */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
+		D6D88AEF1981F52500517537 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AF01981F52500517537 /* fs.hpp */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		D6D88AF21981F52500517537 /* node_fontnik */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AF31981F52500517537 /* glyphs.hpp */,
+			);
+			path = node_fontnik;
+			sourceTree = "<group>";
+		};
+		D6D88AF41981F52500517537 /* node_mapnik */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AF51981F52500517537 /* LICENSE.txt */,
+				D6D88AF61981F52500517537 /* mapnik_fonts.hpp */,
+				D6D88AF71981F52500517537 /* README.fontserver */,
+			);
+			path = node_mapnik;
+			sourceTree = "<group>";
+		};
+		D6D88AF81981F53100517537 /* fontnik */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AF91981F53100517537 /* edtaa */,
+				D6D88AFB1981F53100517537 /* fontnik */,
+				D6D88AFD1981F53100517537 /* freetype-gl */,
+				D6D88AFF1981F53100517537 /* glyphs.cpp */,
+				D6D88B001981F53100517537 /* mapnik */,
+				D6D88B071981F53100517537 /* node_fontnik.cpp */,
+			);
+			path = fontnik;
+			sourceTree = "<group>";
+		};
+		D6D88AF91981F53100517537 /* edtaa */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AFA1981F53100517537 /* edtaa4func.c */,
+			);
+			path = edtaa;
+			sourceTree = "<group>";
+		};
+		D6D88AFB1981F53100517537 /* fontnik */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AFC1981F53100517537 /* glyphs.cpp */,
+			);
+			path = fontnik;
+			sourceTree = "<group>";
+		};
+		D6D88AFD1981F53100517537 /* freetype-gl */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88AFE1981F53100517537 /* distmap.c */,
+			);
+			path = "freetype-gl";
+			sourceTree = "<group>";
+		};
+		D6D88B001981F53100517537 /* mapnik */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88B011981F53100517537 /* debug.cpp */,
+				D6D88B021981F53100517537 /* font_engine_freetype.cpp */,
+				D6D88B031981F53100517537 /* font_set.cpp */,
+				D6D88B041981F53100517537 /* fs.cpp */,
+				D6D88B051981F53100517537 /* text */,
+			);
+			path = mapnik;
+			sourceTree = "<group>";
+		};
+		D6D88B051981F53100517537 /* text */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88B061981F53100517537 /* face.cpp */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
+		D6D88B131981F92200517537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6D88B171981F92200517537 /* libFreetype2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1161,6 +1389,12 @@
 			mainGroup = D675B7B91973B17500209D59;
 			productRefGroup = D675B7C31973B17500209D59 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D6D88B131981F92200517537 /* Products */;
+					ProjectRef = D6D88B121981F92200517537 /* freetype2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D675B7C11973B17500209D59 /* llmr */,
@@ -1168,6 +1402,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D6D88B171981F92200517537 /* libFreetype2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFreetype2.a;
+			remoteRef = D6D88B161981F92200517537 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D675B7D01973B17500209D59 /* Resources */ = {
@@ -1189,6 +1433,7 @@
 				D675BAA01973CDA600209D59 /* core.c in Sources */,
 				D675BAAD1973CDA600209D59 /* loop-watcher.c in Sources */,
 				D675B9051973B1FE00209D59 /* geom.c in Sources */,
+				D6D88B091981F53100517537 /* glyphs.cpp in Sources */,
 				D675B93C1973B1FE00209D59 /* outline_shader.cpp in Sources */,
 				D675B90B1973B1FE00209D59 /* debug_font_buffer.cpp in Sources */,
 				D675B9491973B1FE00209D59 /* property_fallback.cpp in Sources */,
@@ -1228,19 +1473,23 @@
 				D675B9571973B1FE00209D59 /* rotation_range.cpp in Sources */,
 				D675B9021973B1FE00209D59 /* csscolorparser.cpp in Sources */,
 				D675B9561973B1FE00209D59 /* placement.cpp in Sources */,
+				D6D88B0B1981F53100517537 /* glyphs.cpp in Sources */,
 				D675B9061973B1FE00209D59 /* mesh.c in Sources */,
 				D675B94E1973B1FE00209D59 /* style_layer_group.cpp in Sources */,
 				D675B94B1973B1FE00209D59 /* style.cpp in Sources */,
 				D675B9261973B1FE00209D59 /* icon_bucket.cpp in Sources */,
 				D675BA9C1973CDA600209D59 /* threadpool.c in Sources */,
+				D6D88B101981F53100517537 /* face.cpp in Sources */,
 				D675B9341973B1FE00209D59 /* raster_bucket.cpp in Sources */,
 				D675B93A1973B1FE00209D59 /* line_shader.cpp in Sources */,
 				D675B9361973B1FE00209D59 /* composite_shader.cpp in Sources */,
+				D6D88B0A1981F53100517537 /* distmap.c in Sources */,
 				D675B9301973B1FE00209D59 /* painter_prerender.cpp in Sources */,
 				D675B94D1973B1FE00209D59 /* style_layer.cpp in Sources */,
 				D675B9101973B1FE00209D59 /* interpolate.cpp in Sources */,
 				D675BAB11973CDA600209D59 /* pipe.c in Sources */,
 				D675B9381973B1FE00209D59 /* gaussian_shader.cpp in Sources */,
+				D6D88B0C1981F53100517537 /* debug.cpp in Sources */,
 				D675B9031973B1FE00209D59 /* bucketalloc.c in Sources */,
 				D675B95F1973B1FE00209D59 /* timer.cpp in Sources */,
 				D675B9601973B1FE00209D59 /* transition.cpp in Sources */,
@@ -1251,6 +1500,7 @@
 				D675BAB41973CDA600209D59 /* proctitle.c in Sources */,
 				D675B91F1973B1FE00209D59 /* event.cpp in Sources */,
 				D675B90D1973B1FE00209D59 /* fill_buffer.cpp in Sources */,
+				D6D88B111981F53100517537 /* node_fontnik.cpp in Sources */,
 				D675BAA81973CDA600209D59 /* getnameinfo.c in Sources */,
 				D675B93D1973B1FE00209D59 /* pattern_shader.cpp in Sources */,
 				D675B9111973B1FE00209D59 /* line_buffer.cpp in Sources */,
@@ -1270,10 +1520,13 @@
 				D675B9501973B1FE00209D59 /* style_properties.cpp in Sources */,
 				D675B9531973B1FE00209D59 /* collision.cpp in Sources */,
 				D675B9371973B1FE00209D59 /* dot_shader.cpp in Sources */,
+				D6D88B0F1981F53100517537 /* fs.cpp in Sources */,
 				D675B9271973B1FE00209D59 /* line_bucket.cpp in Sources */,
 				D675B9011973B1FE00209D59 /* clipper.cpp in Sources */,
+				D6D96B9F1974D18C00769967 /* nsimage.mm in Sources */,
 				D675B9041973B1FE00209D59 /* dict.c in Sources */,
 				D675B95B1973B1FE00209D59 /* mat4.cpp in Sources */,
+				D6D88B0D1981F53100517537 /* font_engine_freetype.cpp in Sources */,
 				D675B9331973B1FE00209D59 /* prerendered_texture.cpp in Sources */,
 				D675B91B1973B1FE00209D59 /* transform.cpp in Sources */,
 				D675BAEC1973CF8800209D59 /* constants.cpp in Sources */,
@@ -1306,10 +1559,12 @@
 				D675B95E1973B1FE00209D59 /* threadpool.cpp in Sources */,
 				D675B9241973B1FE00209D59 /* fill_bucket.cpp in Sources */,
 				D675B9071973B1FE00209D59 /* priorityq.c in Sources */,
+				D6D88B0E1981F53100517537 /* font_set.cpp in Sources */,
 				D675B9291973B1FE00209D59 /* painter_clipping.cpp in Sources */,
 				D675B95A1973B1FE00209D59 /* io.cpp in Sources */,
 				D675B9171973B1FE00209D59 /* source.cpp in Sources */,
 				D675BA3C1973CC2300209D59 /* foundation_request.mm in Sources */,
+				D6D88B081981F53100517537 /* edtaa4func.c in Sources */,
 				D675B93B1973B1FE00209D59 /* linejoin_shader.cpp in Sources */,
 				D675B9181973B1FE00209D59 /* tile.cpp in Sources */,
 				D675B93E1973B1FE00209D59 /* plain_shader.cpp in Sources */,
@@ -1382,6 +1637,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/Users/chaohan/Documents/Git/llmr/llmr/llmr/include,
 					"/Users/chaohan/Documents/Git/mapbox-gl-native/mapnik-packaging/osx/out/packages/boost_1_55_0-x86_64",
+					"/Users/chaohan/Documents/Git/llmr/llmr/freetype2-ios/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1420,6 +1676,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/Users/chaohan/Documents/Git/llmr/llmr/llmr/include,
 					"/Users/chaohan/Documents/Git/mapbox-gl-native/mapnik-packaging/osx/out/packages/boost_1_55_0-x86_64",
+					"/Users/chaohan/Documents/Git/llmr/llmr/freetype2-ios/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				SDKROOT = iphoneos;
@@ -1432,6 +1689,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/llmr.dst;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "llmr/llmr-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -1444,6 +1702,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/llmr.dst;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "llmr/llmr-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -1507,6 +1766,7 @@
 				D675B7E71973B17500209D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D675B7E81973B17500209D59 /* Build configuration list for PBXNativeTarget "llmrTests" */ = {
 			isa = XCConfigurationList;
@@ -1515,6 +1775,7 @@
 				D675B7EA1973B17500209D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
