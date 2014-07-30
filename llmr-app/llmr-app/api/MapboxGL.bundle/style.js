@@ -1543,7 +1543,7 @@
     "filter": { "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 24,
@@ -1568,7 +1568,7 @@
     "filter": { "$type": "LineString", "labelrank": 1 },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "curve",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 30,
@@ -1596,7 +1596,7 @@
     "filter": { "$type": "LineString", "labelrank": 2 },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "curve",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 24,
@@ -1623,7 +1623,7 @@
     "filter": { "$type": "LineString", "labelrank": 3 },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "curve",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 18,
@@ -1650,7 +1650,7 @@
     "filter": { "$type": "LineString", "labelrank": [4, 5, 6] },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "curve",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 16,
@@ -1677,7 +1677,7 @@
     "filter": { "$type": "Point", "labelrank": 1 },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 30,
@@ -1706,7 +1706,7 @@
     "filter": { "$type": "Point", "labelrank": 2 },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 24,
@@ -1735,7 +1735,7 @@
     "filter": { "$type": "Point", "labelrank": 3 },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 18,
@@ -1764,7 +1764,7 @@
     "filter": { "$type": "Point", "labelrank": [4, 5, 6] },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 16,
@@ -1793,7 +1793,7 @@
     "filter": { "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
       "text-max-size": 16,
@@ -1822,7 +1822,7 @@
     "filter": { "type": "city", "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 20,
@@ -1851,7 +1851,7 @@
     "filter": { "type": "town", "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 24,
@@ -1880,7 +1880,7 @@
     "filter": { "type": "village", "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 22,
@@ -1909,7 +1909,7 @@
     "filter": { "type": ["hamlet", "suburb", "neighbourhood"], "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
       "text-max-size": 18,
@@ -1937,7 +1937,7 @@
     "filter": { "class": ["motorway", "main"], "$type": "LineString" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "curve",
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -1963,7 +1963,7 @@
     "filter": { "class": ["street", "street_limited"], "$type": "LineString" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "curve",
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -1989,7 +1989,7 @@
     "filter": { "class": ["service", "driveway", "path"], "$type": "LineString" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "curve",
       "text-padding": 2,
       "text-font": "Open Sans Regular, Arial Unicode MS Regular",
@@ -2040,7 +2040,7 @@
     "filter": { "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 12,
@@ -2061,7 +2061,7 @@
     "filter": { "$type": "LineString" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "curve",
       "text-font": "Open Sans Semibold Italic, Arial Unicode MS Bold",
       "text-max-size": 12,
@@ -2094,7 +2094,7 @@
     "filter": { "scalerank": [1, 2], "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
@@ -2141,7 +2141,7 @@
     "filter": { "scalerank": 3, "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
@@ -2194,7 +2194,7 @@
     "filter": { "scalerank": 4, "$type": "Point" },
     "type": "text",
     "render": {
-      "text-field": "{name_en}",
+      "text-field": "{name}",
       "text-path": "horizontal",
       "text-padding": 2,
       "text-font": "Open Sans Semibold, Arial Unicode MS Bold",
