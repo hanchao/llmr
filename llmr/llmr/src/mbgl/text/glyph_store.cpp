@@ -213,7 +213,12 @@ void GlyphPBF::parse(FontStack &stack) {
 GlyphStore::GlyphStore(const std::string &glyphURL)
     : glyphURL(glyphURL)
 {
+#ifdef __i386__
     mapnik::freetype_engine::register_font("/System/Library/Fonts/STHeiti Light.ttc");
+#else
+    mapnik::freetype_engine::register_font("/System/Library/Fonts/Cache/STHeiti-Light.ttc");
+#endif
+    
 }
 
 void GlyphStore::waitForGlyphRanges(const std::string &fontStack, const std::set<GlyphRange> &glyphRanges) {

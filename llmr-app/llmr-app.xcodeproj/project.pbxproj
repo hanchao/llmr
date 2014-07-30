@@ -578,7 +578,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "llmr-app/llmr-app-Prefix.pch";
 				INFOPLIST_FILE = "llmr-app/llmr-app-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/llmr-cvjncnqjlxigvvgnefeqkbdsfouv/Build/Products/Debug-iphoneos",
@@ -602,7 +602,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "llmr-app/llmr-app-Prefix.pch";
 				INFOPLIST_FILE = "llmr-app/llmr-app-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/llmr-cvjncnqjlxigvvgnefeqkbdsfouv/Build/Products/Debug-iphoneos",

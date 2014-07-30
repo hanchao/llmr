@@ -7,7 +7,12 @@
       "type": "vector",
       "url": "mapbox://mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5",
       "maxZoom": 14
-    }
+    },
+     "mapzenwater": {
+          "type": "geojson",
+          "url": "http://vector.mapzen.com/osm/water/{z}/{x}/{y}.json",
+          "maxZoom": 14
+      }
   },
   "constants": {
     "@land": "rgb(244,239,225)",
@@ -2240,5 +2245,20 @@
         "stops": [[12, 0], [12.25, 1]]
       }
     }
-  }]
+             }, {
+             "id": "mapzenwater",
+             "source": "mapzenwater",
+             "type": "line",
+             "render": {
+             "line-cap": "round"
+             },
+             "style": {
+             "line-color": "#87abaf",
+             "line-width": "@river_canal_width"
+             },
+             "style.night": {
+             "line-color": "rgb(10,20,71)",
+             "line-width": "@river_canal_width"
+             }
+             }]
 }

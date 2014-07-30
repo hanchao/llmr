@@ -142,7 +142,7 @@ bool freetype_engine::register_font_impl(std::string const& file_name, FT_Librar
         {
             std::string name = std::string(face->family_name) + " " + std::string(face->style_name);
             // skip fonts with leading . in the name
-            //if (!boost::algorithm::starts_with(name,"."))
+            if (name.length() > 0 && name[0] != '.')
             {
                 name2file_.insert(std::make_pair(name, std::make_pair(i,file_name)));
                 success = true;

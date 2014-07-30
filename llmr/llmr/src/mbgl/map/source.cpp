@@ -14,6 +14,7 @@
 
 #include <mbgl/map/vector_tile_data.hpp>
 #include <mbgl/map/raster_tile_data.hpp>
+#include <mbgl/map/geojson_tile_data.hpp>
 
 namespace mbgl {
 
@@ -149,6 +150,8 @@ TileData::State Source::addTile(Map &map, const Tile::ID& id) {
             new_tile.data = std::make_shared<VectorTileData>(normalized_id, map, info);
         } else if (info.type == SourceType::Raster) {
             new_tile.data = std::make_shared<RasterTileData>(normalized_id, map, info);
+        } else if (info.type == SourceType::GeoJSON) {
+            new_tile.data = std::make_shared<GeoJSONTileData>(normalized_id, map, info);
         } else {
             throw std::runtime_error("source type not implemented");
         }

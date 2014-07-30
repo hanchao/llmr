@@ -114,6 +114,7 @@
 		D6737A161988C67E00B9E94B /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = D6737A061988C67E00B9E94B /* pngwtran.c */; };
 		D6737A171988C67E00B9E94B /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D6737A071988C67E00B9E94B /* pngwutil.c */; };
 		D6737A1B1988CDB800B9E94B /* constants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6737A1A1988CDB800B9E94B /* constants.cpp */; };
+		D6737A1F1988E5EE00B9E94B /* geojson_tile_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6737A1D1988E5EE00B9E94B /* geojson_tile_data.cpp */; };
 		D675B7C61973B17500209D59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675B7C51973B17500209D59 /* Foundation.framework */; };
 		D675B7D41973B17500209D59 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675B7D31973B17500209D59 /* XCTest.framework */; };
 		D675B7D51973B17500209D59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675B7C51973B17500209D59 /* Foundation.framework */; };
@@ -149,7 +150,6 @@
 		D675BAB21973CDA600209D59 /* poll.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA681973CDA600209D59 /* poll.c */; };
 		D675BAB31973CDA600209D59 /* process.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA691973CDA600209D59 /* process.c */; };
 		D675BAB41973CDA600209D59 /* proctitle.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA6A1973CDA600209D59 /* proctitle.c */; };
-		D675BAB51973CDA600209D59 /* pthread-fixes.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA6B1973CDA600209D59 /* pthread-fixes.c */; };
 		D675BAB61973CDA600209D59 /* signal.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA6C1973CDA600209D59 /* signal.c */; };
 		D675BAB71973CDA600209D59 /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA6E1973CDA600209D59 /* stream.c */; };
 		D675BAB91973CDA600209D59 /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = D675BA701973CDA600209D59 /* tcp.c */; };
@@ -457,6 +457,7 @@
 		D6737A061988C67E00B9E94B /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
 		D6737A071988C67E00B9E94B /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwutil.c; sourceTree = "<group>"; };
 		D6737A1A1988CDB800B9E94B /* constants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = constants.cpp; sourceTree = "<group>"; };
+		D6737A1D1988E5EE00B9E94B /* geojson_tile_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geojson_tile_data.cpp; sourceTree = "<group>"; };
 		D675B7C21973B17500209D59 /* libllmr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libllmr.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D675B7C51973B17500209D59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D675B7C91973B17500209D59 /* llmr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llmr-Prefix.pch"; sourceTree = "<group>"; };
@@ -520,7 +521,6 @@
 		D675BA681973CDA600209D59 /* poll.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = poll.c; sourceTree = "<group>"; };
 		D675BA691973CDA600209D59 /* process.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = process.c; sourceTree = "<group>"; };
 		D675BA6A1973CDA600209D59 /* proctitle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = proctitle.c; sourceTree = "<group>"; };
-		D675BA6B1973CDA600209D59 /* pthread-fixes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pthread-fixes.c"; sourceTree = "<group>"; };
 		D675BA6C1973CDA600209D59 /* signal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = signal.c; sourceTree = "<group>"; };
 		D675BA6D1973CDA600209D59 /* spinlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spinlock.h; sourceTree = "<group>"; };
 		D675BA6E1973CDA600209D59 /* stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stream.c; sourceTree = "<group>"; };
@@ -844,6 +844,7 @@
 				D673791E1988C3D600B9E94B /* transform_state.cpp */,
 				D673791F1988C3D600B9E94B /* vector_tile.cpp */,
 				D67379201988C3D600B9E94B /* vector_tile_data.cpp */,
+				D6737A1D1988E5EE00B9E94B /* geojson_tile_data.cpp */,
 			);
 			path = map;
 			sourceTree = "<group>";
@@ -1279,7 +1280,6 @@
 				D675BA681973CDA600209D59 /* poll.c */,
 				D675BA691973CDA600209D59 /* process.c */,
 				D675BA6A1973CDA600209D59 /* proctitle.c */,
-				D675BA6B1973CDA600209D59 /* pthread-fixes.c */,
 				D675BA6C1973CDA600209D59 /* signal.c */,
 				D675BA6D1973CDA600209D59 /* spinlock.h */,
 				D675BA6E1973CDA600209D59 /* stream.c */,
@@ -1591,7 +1591,6 @@
 				D67379D51988C3D600B9E94B /* property_fallback.cpp in Sources */,
 				D67379A21988C3D600B9E94B /* vector_tile_data.cpp in Sources */,
 				D6737A131988C67E00B9E94B /* pngtrans.c in Sources */,
-				D675BAB51973CDA600209D59 /* pthread-fixes.c in Sources */,
 				D67379D91988C3D600B9E94B /* style_layer.cpp in Sources */,
 				D67379B21988C3D600B9E94B /* frame_history.cpp in Sources */,
 				D67379E61988C3D600B9E94B /* image.cpp in Sources */,
@@ -1606,6 +1605,7 @@
 				D675BA9B1973CDA600209D59 /* inet.c in Sources */,
 				D675BAA51973CDA600209D59 /* fs.c in Sources */,
 				D675BAA71973CDA600209D59 /* getaddrinfo.c in Sources */,
+				D6737A1F1988E5EE00B9E94B /* geojson_tile_data.cpp in Sources */,
 				D673799D1988C3D600B9E94B /* tile_data.cpp in Sources */,
 				D67379D11988C3D600B9E94B /* class_properties.cpp in Sources */,
 				D67379E31988C3D600B9E94B /* rotation_range.cpp in Sources */,
